@@ -10,14 +10,21 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("⌘ + ⌃ + Space")
+                .padding(.top, 30)
+            Spacer()
+            HStack {
+                Text("😃")
+                    .padding(.leading,30)
+                Spacer()
+                Text("Welcome to Autolayout")
+                    .padding(.trailing, 30)
+            }
+            .padding(.bottom, 30)
         }
-        .padding()
     }
 }
+
 
 #Preview {
     ContentView()
